@@ -1,4 +1,3 @@
-// import contactsJson from '../contacts.json'
 const { createSlice } = require("@reduxjs/toolkit");
 
 
@@ -26,7 +25,3 @@ export const { addContact, updateFilter, deleteContact } = contactSlice.actions
 export const selectContacts = (state) => state.contact.contacts;
 export const selectFilter = (state) => state.contact.filter;
 export default contactSlice.reducer;
-
-// localStorage.getItem('contacts')
-//         ? JSON.parse(localStorage.getItem('contacts'))
-//             : contactsJson
